@@ -5,8 +5,22 @@
     <link rel="stylesheet" type="text/css" href="SortesStyles.css"/>
 	<meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div>
         <label for="EnterQuestion">Ask the Oracle a question:</label>
         <input id="EnterQuestion" />
@@ -20,6 +34,19 @@
         <p id="resultNumP">The old lady stirs the cauldron...</p> 
         <p id="prophecyP">The oracle gazes into the mists...</p> 
     </div>
+
+    <div class="fb-share-button" data-href="file:///D:/JS/JavaScript-Applications-master/Teamwork/Sortes/Sortes-Homericae/SortesMain.html" data-layout="button" data-size="small" data-mobile-iframe="true">
+        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse">
+            <img src="pics\facebooklogox-large.jpg" width="20px"/>
+        </a>
+    </div>
+
+    <div class="G-share-button">
+        <link rel="canonical" href="http://www.example.com" />
+        <g:plus action="share"></g:plus>
+    </div>
+
+
     <script src="SortesCore.js"></script>
 </body>
 </html>
